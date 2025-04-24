@@ -1,5 +1,5 @@
 -- This file was protected using Luraph Obfuscator v14.4.1 [https://lura.ph/]
-script_key="YvnXiXKFcDCZzXJeDWturVUZfIWoyUZu";
+
 if not getgenv().BXOR then
   local old = table.clone(bit32);
   old["BXOR"] = clonefunction(bit32.bxor);
