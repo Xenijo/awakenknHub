@@ -1,0 +1,18 @@
+--[[
+                       _                _           _            ___    _                     _           
+     /\               | |              | |         | |          |__ \  | |                   | |          
+    /  \__      ____ _| | _____ _ __   | |__  _   _| |__   __   __ ) | | |     ___   __ _  __| | ___ _ __ 
+   / /\ \ \ /\ / / _` | |/ / _ \ '_ \  | '_ \| | | | '_ \  \ \ / // /  | |    / _ \ / _` |/ _` |/ _ \ '__|
+  / ____ \ V  V / (_| |   <  __/ | | | | | | | |_| | |_) |  \ V // /_  | |___| (_) | (_| | (_| |  __/ |   
+ /_/    \_\_/\_/ \__,_|_|\_\___|_| |_| |_| |_|\__,_|_.__/    \_/|____| |______\___/ \__,_|\__,_|\___|_|   
+                                                                                                          
+                                                                                                          
+(◉‿◉) 𝗪𝗲 𝘁𝗮𝗸𝗲 𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝘀𝗲𝗿𝗶𝗼𝘂𝘀 (◉‿◉)
+]]
+local Supported = {
+    ["SouthBrox"] = {
+        gameIds = {10179538382, 13643807539, 14413475235, 15124180230, 82028255140111, 93612682780562, 107558328556623},
+        script = 'https://raw.githubusercontent.com/Xenijo/awakenknHub/refs/heads/main/Main.lua'
+    },
+}
+local a=false;function run(b)return loadstring(game:HttpGet(b))()end;local c=game.PlaceId;for d,e in pairs(Supported)do for d,f in ipairs(e.gameIds)do if f==c then run(e.script)a=true;return end end end;if a==false then game:GetService("Players").LocalPlayer:Kick("[awakenhubv2]: Game not supported")end
