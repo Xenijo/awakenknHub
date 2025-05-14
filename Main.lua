@@ -2,7 +2,7 @@
 
  if not getgenv().BXOR then
   local old = table.clone(bit32);
-  old["BXOR"] = clonefunction(bit32.BXOR);
+  old["BXOR"] = clonefunction(bit32.bxor);
   getgenv().bit32 = old;
 end;
 
