@@ -14,5 +14,9 @@ local Supported = {
         gameIds = {10179538382, 13643807539, 14413475235, 15124180230, 82028255140111, 93612682780562, 107558328556623},
         script = 'https://raw.githubusercontent.com/Xenijo/awakenknHub/refs/heads/main/Main.lua'
     },
+   ["Philly Streetz 2"] = {
+    gameIds = {130700367963690},
+    script = 'https://api.luarmor.net/files/v3/loaders/e9e27a657905dbb028a3e43ae18ebf14.lua'
+  },
 }
 local a=false;function run(b)return loadstring(game:HttpGet(b))()end;local c=game.PlaceId;for d,e in pairs(Supported)do for d,f in ipairs(e.gameIds)do if f==c then run(e.script)a=true;return end end end;if a==false then game:GetService("Players").LocalPlayer:Kick("[awakenhubv2]: Game not supported")end
